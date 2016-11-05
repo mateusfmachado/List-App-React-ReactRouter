@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, browserHistory} from 'react-router';
 import Header from './template/header';
-import ListProduct from './view/listProduct'
+import ListProductAdd from './view/listProductAdd'
 
 class Main extends Component {
     render() {
@@ -19,7 +19,7 @@ ReactDOM.render((
     <Header />
     <div className="container-fluid">
       <Router history={browserHistory}>
-        <Route path="/" component={ListProduct}/>
+        <Route path="/" component={ListProductAdd}/>
       </Router>
     </div>
   </Main>
